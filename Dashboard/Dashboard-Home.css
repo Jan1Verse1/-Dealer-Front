@@ -104,6 +104,7 @@
 
  }
 
+ .fa-regular,
  .icons {
      display: grid;
      place-content: center;
