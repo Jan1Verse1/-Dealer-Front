@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Transactions.css">
-    <title>Transactions</title>
+    <link rel="stylesheet" href="Users.css">
+    <title>Users</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                 <div class="dashboardmenu"><img class="icons" src="/-Dealer-Front/Resources/grid-01.svg" alt="">
                     <h4>Overview</h4>
                 </div>
-                <div class="active-tab">
+                <div class="dashboardmenu"  >
                     <img class="icons" src="/-Dealer-Front/Resources/refresh-cw-02.svg" alt="">
                     <h4>Transactions </h4>
                 </div>
@@ -38,7 +38,7 @@
                     <img class="icons" src="/-Dealer-Front/Resources/coins-stacked-02.svg" alt="">
                     <h4>Settlement platform</h4>
                 </div>
-                <div class="dashboardmenu">
+                <div class="dashboardmenu" >
                     <img class="icons" src="/-Dealer-Front/Resources/shield-dollar.svg" alt="">
                     <h4>Securities</h4>
                 </div>
@@ -49,7 +49,7 @@
             </div>
             <div class="UserMgt">
                 <h3 class="dashboardHeadText">User Management</h3>
-                <div class="dashboardmenu">
+                <div class="active-tab">
                     <img class="icons" src="/-Dealer-Front/Resources/users-03.svg" alt="">
                     <h4>Users</h4>
                 </div>
@@ -70,7 +70,7 @@
 
         <div class="mainScreen">
             <div class="theHeader">
-                <h3 class="theHeaderText">Overview</h3>
+                <h3 class="theHeaderText">users</h3>
                 <div class="userProfile">
                     <img class="bell" src="/-Dealer-Front/Resources/bell-01.svg" alt="">
                     <H3 class="userInitals">OA</H3>
@@ -81,43 +81,41 @@
             </div>
             <div class="content">
                 <div class="buttons">
-                    <button class="primaryButton"> <img class="plus" src="/-Dealer-Front/Resources/create.svg" alt="">
-                        Create Transaction</button>
-                    <button class="secondaryButton"> <img class="plus" src="/-Dealer-Front/Resources/bank.svg"
-                            alt="">Send note to settlement banks</button>
+                    <button class="primaryButton"> <img class="plus" src="/-Dealer-Front/Resources/user-plus-01.svg" alt="">
+                        Create Users</button>
                 </div>
                 <div class="cards">
                     <div class="card">
-                        <img class="cardChart" src="/-Dealer-Front/Resources/Card chart.svg" alt="">
+                        <img class="cardChart" src="/-Dealer-Front/Resources/Securities.svg" alt="">
                         <div class="cardText">
-                            <h3 class="cardTitle">Total transaction</h3>
+                            <h3 class="cardTitle">Total Users</h3>
                             <h2 class="cardText">1000</h2>
                         </div>
                         <img class="geo" src="/-Dealer-Front/Resources/Geo.svg" alt="">
 
                     </div>
                     <div class="card">
-                        <img class="cardChart" src="/-Dealer-Front/Resources/Card chart.svg" alt="">
+                        <img class="cardChart" src="/-Dealer-Front/Resources/Securities.svg" alt="">
                         <div class="cardText">
-                            <h3 class="cardTitle">Pending approvals</h3>
+                            <h3 class="cardTitle"> Administrators</h3>
                             <h2 class="cardText">200</h2>
                         </div>
                         <img class="geo" src="/-Dealer-Front/Resources/Geo.svg" alt="">
 
                     </div>
                     <div class="card">
-                        <img class="cardChart" src="/-Dealer-Front/Resources/Card chart.svg" alt="">
+                        <img class="cardChart" src="/-Dealer-Front/Resources/Securities.svg" alt="">
                         <div class="cardText">
-                            <h3 class="cardTitle">Rejected trades</h3>
+                            <h3 class="cardTitle">Traders</h3>
                             <h2 class="cardText">300</h2>
                         </div>
                         <img class="geo" src="/-Dealer-Front/Resources/Geo.svg" alt="">
 
                     </div>
                     <div class="card">
-                        <img class="cardChart" src="/-Dealer-Front/Resources/Card chart.svg" alt="">
+                        <img class="cardChart" src="/-Dealer-Front/Resources/Securities.svg" alt="">
                         <div class="cardText">
-                            <h3 class="cardTitle">Revoked trades</h3>
+                            <h3 class="cardTitle">Trainees</h3>
                             <h2 class="cardText">450</h2>
                         </div>
                         <img class="geo" src="/-Dealer-Front/Resources/Geo.svg" alt="">
@@ -126,7 +124,7 @@
                 </div>
                 <div class="tableAndMore">
                     <div class="more">
-                        <h3 class="moreText">Transactions</h3>
+                        <h3 class="moreText">Users</h3>
                         <div class="buttons">
                             <button class="filterButton"> <img class="plus"
                                     src="/-Dealer-Front/Resources/Filters lines.svg" alt="">
@@ -140,105 +138,87 @@
                     <table>
                         <tr>
                             <th>#</th>
-                            <th>Trade date</th>
-                            <th>Settlement date</th>
-                            <th>Trade type</th>
-                            <th>Counterparty</th>
-                            <th>Instrument</th>
-                            <th>Volume</th>
-                            <th>Considerations</th>
-                            <th>Created by</th>
+                            <th>Full name</th>
+                            <th>Email addresses</th>
+                            <th>Role</th>
+                            <th>Phone number</th>
+                            <th>Created By</th>
+                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>12 Dec, 2022</td>
-                            <td>12 Dec, 2022</td>
-                            <td>Buy</td>
-                            <td>Coronation merchant bank</td>
-                            <td>PN 25-Mar-2023</td>
-                            <td>12000000000</td>
-                            <td>277775678.62</td>
-                            <td>Philip Ofei</td>
+                            <td>Philip Olorunfemi Ofei</td>
+                            <td>test.user@parthianpartners.com</td>
+                            <td>Administrator</td>
+                            <td>07012345678</td>
+                            <td>Parthian partners</td>
+                            <td><p class="tablePillApproved">Approved</p></td>
                             <td class="tableActions">
-                                <p class="tablePillApproved">Approved</p>
-                                <button class="tableActionButton"> Revoke</button>
-                                <img class="icons" src="/-Dealer-Front/Resources/Dropdown.svg" alt="">
-
+                                <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
+                                <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
                             </td>
 
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>12 Dec, 2022</td>
-                            <td>12 Dec, 2022</td>
-                            <td>Buy</td>
-                            <td>Coronation merchant bank</td>
-                            <td>PN 25-Mar-2023</td>
-                            <td>12000000000</td>
-                            <td>277775678.62</td>
-                            <td>Philip Ofei</td>
+                            <td>Philip Olorunfemi Ofei</td>
+                            <td>test.user@parthianpartners.com</td>
+                            <td>Trader</td>
+                            <td>07012345678</td>
+                            <td>Parthian partners</td>
+                            <td><p class="tablePillPending">Pending</p></td>
                             <td class="tableActions">
-                                <p class="tablePillPending">Pending</p>
-                                <button class="tableActionButton"> Revoke</button>
-                                <img class="icons" src="/-Dealer-Front/Resources/Dropdown.svg" alt="">
-
+                                <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
+                                <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
                             </td>
 
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>12 Dec, 2022</td>
-                            <td>12 Dec, 2022</td>
-                            <td>Buy</td>
-                            <td>Coronation merchant bank</td>
-                            <td>PN 25-Mar-2023</td>
-                            <td>12000000000</td>
-                            <td>277775678.62</td>
-                            <td>Philip Ofei</td>
+                            <td>Philip Olorunfemi Ofei</td>
+                            <td>test.user@parthianpartners.com</td>
+                            <td>Trainee</td>
+                            <td>07012345678</td>
+                            <td>Parthian partners</td>
+                            <td><p class="tablePillApproved">Approved</p></td>
                             <td class="tableActions">
-                                <p class="tablePillRejected">Rejected</p>
-                                <button class="tableActionButton"> Revoke</button>
-                                <img class="icons" src="/-Dealer-Front/Resources/Dropdown.svg" alt="">
-
+                                <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
+                                <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
                             </td>
 
                         </tr>
+
                         <tr>
                             <td>4</td>
-                            <td>12 Dec, 2022</td>
-                            <td>12 Dec, 2022</td>
-                            <td>Buy</td>
-                            <td>Coronation merchant bank</td>
-                            <td>PN 25-Mar-2023</td>
-                            <td>12000000000</td>
-                            <td>277775678.62</td>
-                            <td>Philip Ofei</td>
+                            <td>Philip Olorunfemi Ofei</td>
+                            <td>test.user@parthianpartners.com</td>
+                            <td>Administrator</td>
+                            <td>07012345678</td>
+                            <td>Parthian partners</td>
+                            <td><p class="tablePillApproved">Approved</p></td>
                             <td class="tableActions">
-                                <p class="tablePillRevoked">Revoked</p>
-                                <img class="icons" src="/-Dealer-Front/Resources/Dropdown.svg" alt="">
-
+                                <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
+                                <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
                             </td>
 
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>12 Dec, 2022</td>
-                            <td>12 Dec, 2022</td>
-                            <td>Buy</td>
-                            <td>Coronation merchant bank</td>
-                            <td>PN 25-Mar-2023</td>
-                            <td>12000000000</td>
-                            <td>277775678.62</td>
-                            <td>Philip Ofei</td>
+                            <td>Philip Olorunfemi Ofei</td>
+                            <td>test.user@parthianpartners.com</td>
+                            <td>Trader</td>
+                            <td>07012345678</td>
+                            <td>Parthian partners</td>
+                            <td><p class="tablePillPending">Pending</p></td>
                             <td class="tableActions">
-                                <p class="tablePillApproved">Approved</p>
-                                <button class="tableActionButton"> Revoke</button>
-                                <img class="icons" src="/-Dealer-Front/Resources/Dropdown.svg" alt="">
-
+                                <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
+                                <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
                             </td>
 
                         </tr>
+                      
+                      
 
                     </table>
                 </div>

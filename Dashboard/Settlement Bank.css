@@ -88,15 +88,16 @@
      justify-content: center;
  }
 
- .dashboardmenu:hover {
-     color: #fff;
-     background-color: #98A2B3;
- }
-
+ .dashboardmenu:hover,
  .active-tab:hover {
      color: #fff;
      background-color: #98A2B3;
  }
+
+ /* .active-tab:hover {
+     color: #fff;
+     background-color: #98A2B3;
+ } */
 
  .active-tab {
      border-left: solid 2px #370099;
@@ -427,72 +428,8 @@ table {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
   }
-  .tablePillApproved {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 64px;
-    height: 32px;
-    color: #027A48;
-    padding: 4px;
-    border-radius: 8px;
-    background-color: #ECFDF3;
-    margin-right: 4px;
-}
-.tablePillPending {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 64px;
-    height: 32px;
-    color: #B54708;
-    padding: 4px;
-    border-radius: 8px;
-    background-color: #f1cfba;
-    margin-right: 4px;
-}
-.tablePillRejected {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 64px;
-    height: 32px;
-    color: #B42318;
-    padding: 4px;
-    border-radius: 8px;
-    background-color: #ecc8c6;
-    margin-right: 4px;
-}
-.tablePillRevoked {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 64px;
-    height: 32px;
-    color: #344054;
-    padding: 4px;
-    border-radius: 8px;
-    background-color: #c2cbdb;
-    margin-right: 90px;
-}
-.tableActionButton {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    width: 64px;
-    height: 32px;
-    color: #EB5757;
-    padding: 4px;
-    gap: 12px;
-    border: solid 1px #EB5757;
-    border-radius: 8px;
-    background-color: #e9d3d1;
-    cursor: pointer;
-    margin-right: 4px;
-}
+
 .pagination{
     display: flex;
     flex-direction: row;
@@ -528,4 +465,21 @@ table {
     background-color: transparent;
     cursor: pointer;
     margin-right: 10px;
+}
+.emails{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.count {
+    display: grid;
+    place-content: center;
+    width: 32px;
+    height: 32px;
+    color: #98A2B3;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #EAECF0;
+    margin-right: 10px;
+    border-radius: 10px;
 }
