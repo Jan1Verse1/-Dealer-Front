@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Counterparty.css">
+    <script src="counterparty.js" defer></script>
     <title>Counterparty</title>
 </head>
 
@@ -22,7 +23,7 @@
                 <div class="dashboardmenu"><img class="icons" src="/-Dealer-Front/Resources/grid-01.svg" alt="">
                     <h4>Overview</h4>
                 </div>
-                <div class="dashboardmenu" >
+                <div class="dashboardmenu">
                     <img class="icons" src="/-Dealer-Front/Resources/refresh-cw-02.svg" alt="">
                     <h4>Transactions </h4>
                 </div>
@@ -81,7 +82,8 @@
             </div>
             <div class="content">
                 <div class="buttons">
-                    <button class="primaryButton"> <img class="plus" src="/-Dealer-Front/Resources/create.svg" alt="">
+                    <button class="primaryButton" onclick="openModal()"> <img class="plus"
+                            src="/-Dealer-Front/Resources/create.svg" alt="">
                         Create Counterparty</button>
                 </div>
                 <div class="tableAndMore">
@@ -238,7 +240,7 @@
                 <button class="paginationButton">Previous</button>
                 <p class="paginationText">Page 1 of 10</p>
                 <button class="paginationButton">Next</button>
-                    
+
             </div>
 
         </div>
@@ -246,6 +248,53 @@
         </div>
 
     </section>
+
+
+
+    <section class="modal hidden">
+        <div class="modalHead">
+            <div class="modalText">
+                <h3>Create counterparty</h3>
+                <p>Sem tincidunt eget adipiscing aliquam mattis vestibulum, nec.Sem tincidunt eget adipiscing aliquam
+                    mattis vestibulum, nec.</p>
+            </div>
+            <img class="close" onclick="closeModal()" src="/-Dealer-Front/Resources/x.svg" alt="">
+        </div>
+
+        <form class="theForm">
+            <label for="text">Institution:</label><br>
+            <input type="text" id="name" placeholder="e.g. Stanbic bank" required />
+            <label for="text">Security type</label><br>
+            <select id="security-type" class="form-select" required>
+                <option selected value="">select security type</option>
+                <option value="securityType">Security Type 1</option>
+                <option value="securityType">Security Type 2</option>
+            </select>
+            <label for="text">Sub type</label><br>
+            <select id="sub-type" class="form-select" required>
+                <option selected value="">select sub type</option>
+                <option value="subType">Sub Type 1</option>
+                <option value="subType">Sub Type 2</option>
+            </select>
+            <label for="text">Custodian:</label><br>
+            <input type="text" id="name" placeholder="enter custiodian" required />
+            <label for="text">Contact person:</label><br>
+            <input type="text" id="name" placeholder="Olivia Adebowale" required />
+            <label for="text">Phone number:</label><br>
+            <input type="text" id="name" placeholder="enter custiodian" required />
+            <label for="text">Email Addresses:</label><br>
+            <input type="text" id="name" placeholder="seperate each email with a comma" required />
+
+        </form>
+
+        <div class="modal-buttons">
+            <button class="closeButton">Cancel</button>
+            <button class="submitButton" type="submit" class="first-button btn">
+                Submit <img class="icons" src="/-Dealer-Front/Resources/log-in-04.svg" alt="">
+            </button>
+        </div>
+    </section>
+    <div class="overlay hidden"></div>
 
 </body>
 
