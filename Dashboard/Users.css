@@ -225,7 +225,8 @@
      margin-top: 4px;
  }
 
- .primaryButton {
+ .primaryButton,
+ .submitButton {
      justify-content: center;
      align-items: center;
      display: flex;
@@ -244,7 +245,8 @@
  }
 
  .secondaryButton,
- .moreButton {
+ .moreButton,
+ .cancelButton {
      justify-content: center;
      align-items: center;
      display: flex;
@@ -364,16 +366,11 @@
     margin-right: 400px;
 }
 
- input[type=text] {
-    float: right;
-    padding: 6px;
-    width: 320px;
-    Height: 40px;
-    /* margin-top: 8px;
-    margin-right: 16px; */
-    font-size: 17px;
-    border: 1px solid #EAECF0;
-    border-radius: 4px;
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 4px;
   }
   .filterButton {
     justify-content: center;
@@ -489,3 +486,120 @@ table {
     cursor: pointer;
     margin-right: 10px;
 }
+
+.myModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    gap: 1rem;
+    padding: 1.3rem;
+    width: auto;
+    min-height: max-content;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    z-index: 10;
+    position: fixed;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+ 
+ }
+
+
+
+ .modalHead {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .modalText h3 {
+     font-size: 32px;
+     font-weight: 600;
+     margin-top: 10px;
+     color: #333;
+     /* background-color: transparent; */
+ }
+
+ .close {
+     display: grid;
+     place-content: center;
+     width: 32px;
+     height: 32px;
+     color: #333;
+     font-weight: 400;
+     font-size: 12px;
+     background-color: #EAECF0;
+     border-radius: 20px;
+     cursor: pointer;
+ }
+
+ .theForm input,
+ .theForm select {
+     padding: 2px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     height: 40px;
+     font-size: 14px;
+     color: #777;
+     margin-bottom: 12px;
+ }
+
+ /* input {
+     width: 100%;
+     height: 40px;
+     margin-bottom: 12px;
+ } */
+
+ label {
+     font-weight: 400;
+     font-size: 16px;
+     margin-bottom: 8px;
+     color: #333;
+ }
+
+ .modalText p {
+     font-size: 16px;
+     color: #777;
+     margin: 10px;
+ }
+
+ .theForm {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     background-color: white;
+ }
+ .formInputs{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .modal-buttons {
+     display: grid;
+     /* grid-template-columns: auto auto; */
+     gap: 20px;
+     background-color: white;
+     grid-template-columns: 100px 100px 100px;
+     grid-template-rows: auto;
+ }
+
+ .overlay {
+     position: fixed;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     backdrop-filter: blur(3px);
+     z-index: 1;
+     visibility: hidden;
+ }

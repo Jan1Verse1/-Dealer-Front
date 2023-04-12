@@ -22,7 +22,7 @@
                 <div class="dashboardmenu"><img class="icons" src="/-Dealer-Front/Resources/grid-01.svg" alt="">
                     <h4>Overview</h4>
                 </div>
-                <div class="dashboardmenu"  >
+                <div class="dashboardmenu">
                     <img class="icons" src="/-Dealer-Front/Resources/refresh-cw-02.svg" alt="">
                     <h4>Transactions </h4>
                 </div>
@@ -38,7 +38,7 @@
                     <img class="icons" src="/-Dealer-Front/Resources/coins-stacked-02.svg" alt="">
                     <h4>Settlement platform</h4>
                 </div>
-                <div class="dashboardmenu" >
+                <div class="dashboardmenu">
                     <img class="icons" src="/-Dealer-Front/Resources/shield-dollar.svg" alt="">
                     <h4>Securities</h4>
                 </div>
@@ -81,7 +81,8 @@
             </div>
             <div class="content">
                 <div class="buttons">
-                    <button class="primaryButton"> <img class="plus" src="/-Dealer-Front/Resources/user-plus-01.svg" alt="">
+                    <button class="primaryButton" id="openModal"> <img class="plus"
+                            src="/-Dealer-Front/Resources/user-plus-01.svg" alt="">
                         Create Users</button>
                 </div>
                 <div class="cards">
@@ -153,7 +154,9 @@
                             <td>Administrator</td>
                             <td>07012345678</td>
                             <td>Parthian partners</td>
-                            <td><p class="tablePillApproved">Approved</p></td>
+                            <td>
+                                <p class="tablePillApproved">Approved</p>
+                            </td>
                             <td class="tableActions">
                                 <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
                                 <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
@@ -167,7 +170,9 @@
                             <td>Trader</td>
                             <td>07012345678</td>
                             <td>Parthian partners</td>
-                            <td><p class="tablePillPending">Pending</p></td>
+                            <td>
+                                <p class="tablePillPending">Pending</p>
+                            </td>
                             <td class="tableActions">
                                 <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
                                 <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
@@ -181,7 +186,9 @@
                             <td>Trainee</td>
                             <td>07012345678</td>
                             <td>Parthian partners</td>
-                            <td><p class="tablePillApproved">Approved</p></td>
+                            <td>
+                                <p class="tablePillApproved">Approved</p>
+                            </td>
                             <td class="tableActions">
                                 <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
                                 <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
@@ -196,7 +203,9 @@
                             <td>Administrator</td>
                             <td>07012345678</td>
                             <td>Parthian partners</td>
-                            <td><p class="tablePillApproved">Approved</p></td>
+                            <td>
+                                <p class="tablePillApproved">Approved</p>
+                            </td>
                             <td class="tableActions">
                                 <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
                                 <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
@@ -210,15 +219,17 @@
                             <td>Trader</td>
                             <td>07012345678</td>
                             <td>Parthian partners</td>
-                            <td><p class="tablePillPending">Pending</p></td>
+                            <td>
+                                <p class="tablePillPending">Pending</p>
+                            </td>
                             <td class="tableActions">
                                 <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
                                 <img class="icons" src="/-Dealer-Front/Resources/trash-2.svg" alt="">
                             </td>
 
                         </tr>
-                      
-                      
+
+
 
                     </table>
                 </div>
@@ -227,7 +238,7 @@
                 <button class="paginationButton">Previous</button>
                 <p class="paginationText">Page 1 of 10</p>
                 <button class="paginationButton">Next</button>
-                    
+
             </div>
 
         </div>
@@ -235,6 +246,111 @@
         </div>
 
     </section>
+
+    <section class="myModal" id="modal">
+
+        <div class="modal-content">
+            <div class="modalHead">
+                <div class="modalText">
+                    <h3>Create a user</h3>
+                    <p>Sem tincidunt eget adipiscing aliquam mattis vestibulum, nec.Sem tincidunt eget adipiscing
+                        aliquam
+                        mattis vestibulum, nec.</p>
+                </div>
+                <img class="close" src="/-Dealer-Front/Resources/x.svg" alt="">
+            </div>
+
+            <form class="theForm">
+                <div class="formInputs">
+                    <div class="input">
+                        <label for="text">Full name:</label><br>
+                        <input type="text" id="name" placeholder="Enter User Full Name" required />
+                    </div>
+                    <div class="input">
+                        <label for="text">Email:</label><br>
+                        <input type="text" id="name" placeholder="Enter User Email Address" required />
+                    </div>
+                </div>
+                <div class="formInputs">
+                    <div class="input">
+                        <label for="text">Phone number:</label><br>
+                        <input type="text" id="name" placeholder="enter custiodian" required />
+                    </div>
+                    <div class="input">
+                        <label for="text">Gender</label><br>
+                        <select id="sub-type" class="form-select" required>
+                            <option selected value="">select gender type</option>
+                            <option value="subType">Male</option>
+                            <option value="subType">Female</option>
+                            <option value="subType">Non-Binary</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="formInputs">
+                    <div class="input">
+                        <label for="text">Roles</label><br>
+                        <select id="sub-type" class="form-select" required>
+                            <option selected value="">select roles type</option>
+                            <option value="subType">Administrator</option>
+                            <option value="subType">Trader</option>
+                            <option value="subType">Trainee</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <div class="modal-buttons">
+                <button class="closeButton">Cancel</button>
+                <button class="submitButton" type="submit" class="first-button btn">
+                    Create user <img class="icons" src="/-Dealer-Front/Resources/log-in-04.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="overlay" id="myOverlay"></div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("openModal");
+
+        // Get the <span> element that closes the modal
+        var close = document.getElementsByClassName("close")[0];
+
+        var closeButton = document.getElementsByClassName("closeButton")[0];
+
+        var overlay = document.getElementById("overlay");
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+            overlay.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        close.onclick = function () {
+            modal.style.display = "none";
+            overlay.style.dispaly = "none";
+        }
+        closeButton.onclick = function () {
+            modal.style.display = "none";
+            overlay.style.dispaly = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
 
 </body>
 
