@@ -567,6 +567,7 @@
      font-size: 14px;
      color: #777;
      margin-bottom: 12px;
+     width: 400px;
  }
 
  /* input {
@@ -594,12 +595,18 @@
      gap: 10px;
      background-color: white;
  }
- .formInputs{
+ /* .formInputs{
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
     justify-content: space-between;
+ } */
+
+ .formInputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
  }
 
  .modal-buttons {
