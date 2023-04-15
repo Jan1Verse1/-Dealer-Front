@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Create New.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
+    <!-- <script src="counterparty.js" defer></script> -->
+    <title>Counterparty</title>
+</head>
+
+<body>
+
+    <section class="theScreen">
+        <nav class="navBar">
+            <img class="logo" src="/-Dealer-Front/Asset 12 1.png" alt="">
+
+
+            <div class="dashboard">
+                <h3 class="dashboardHeadText">Dashboard</h3>
+
+                <div class="dashboardmenu"><img class="icons" src="/-Dealer-Front/Resources/grid-01.svg" alt="">
+                    <h4>Overview</h4>
+                </div>
+                <div class="dashboardmenu">
+                    <img class="icons" src="/-Dealer-Front/Resources/refresh-cw-02.svg" alt="">
+                    <h4>Transactions </h4>
+                </div>
+                <div class="active-tab">
+                    <img class="icons" src="/-Dealer-Front/Resources/layers-three-01.svg" alt="">
+                    <h4>Counterparty</h4>
+                </div>
+                <div class="dashboardmenu">
+                    <img class="icons" src="/-Dealer-Front/Resources/bank.svg" alt="">
+                    <h4>Settlement Bank</h4>
+                </div>
+                <div class="dashboardmenu">
+                    <img class="icons" src="/-Dealer-Front/Resources/coins-stacked-02.svg" alt="">
+                    <h4>Settlement platform</h4>
+                </div>
+                <div class="dashboardmenu">
+                    <img class="icons" src="/-Dealer-Front/Resources/shield-dollar.svg" alt="">
+                    <h4>Securities</h4>
+                </div>
+                <div class="dashboardmenu">
+                    <img class="icons" src="/-Dealer-Front/Resources/bar-chart-10.svg" alt="">
+                    <h4>Reports</h4>
+                </div>
+            </div>
+            <div class="UserMgt">
+                <h3 class="dashboardHeadText">User Management</h3>
+                <div class="dashboardmenu">
+                    <img class="icons" src="/-Dealer-Front/Resources/users-03.svg" alt="">
+                    <h4>Users</h4>
+                </div>
+            </div>
+
+            <div class="UserMgt">
+                <div class="Administrator">
+                    <img class="icons" src="/-Dealer-Front/Resources/user-02.svg" alt="">
+                    <h4>Administrator</h4>
+                </div>
+            </div>
+
+            <div class="copyright">© 2022 Parthian Partners.
+            </div>
+
+
+        </nav>
+
+        <div class="mainScreen">
+            <div class="theHeader">
+                <h3 class="theHeaderText">Counterparty</h3>
+                <div class="userProfile">
+                    <img class="bell" src="/-Dealer-Front/Resources/bell-01.svg" alt="">
+                    <H3 class="userInitals">OA</H3>
+                    <H3 class="userName">Olivia Adebowale</H3>
+                    <img class="icons" src="/-Dealer-Front/Resources/chevron-down.svg" alt="">
+                </div>
+
+            </div>
+            <div class="content">
+                <!-- <div class="buttons">
+                    <button class="primaryButton" id="openModal"> <img class="plus"
+                            src="/-Dealer-Front/Resources/create.svg" alt="">
+                        Create Counterparty</button>
+                </div> -->
+                <form class="theForm">
+                    <div class="formInputs">
+                        <div class="input">
+                            <label for="text">Security type</label><br>
+                            <select id="security-type" class="form-select" required>
+                                <option selected value="">select security type</option>
+                                <option value="securityType">Security Type 1</option>
+                                <option value="securityType">Security Type 2</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="text">Security</label><br>
+                            <select id="security-type" class="form-select" required>
+                                <option selected value="">select security</option>
+                                <option value="securityType">Security 1</option>
+                                <option value="securityType">Security 2</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="text">Security type(T+)</label><br>
+                            <select id="security-type" class="form-select" required>
+                                <option selected value="">select security type</option>
+                                <option value="securityType">Security Type 1</option>
+                                <option value="securityType">Security Type 2</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="text">Custodian:</label><br>
+                            <input type="text" id="name" placeholder="enter custiodian" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Trade Date:</label><br>
+                            <input type="text" id="name" placeholder="Trade Date" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Settlement Date:</label><br>
+                            <input type="text" id="name" placeholder="Settlement Date" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Term to Maturity:</label><br>
+                            <input type="text" id="name" placeholder="Term to Maturity" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Total Value:</label><br>
+                            <input type="text" id="name" placeholder="Total Value" required />
+                        </div>
+
+                    </div>
+                </form>
+                <div class="theHeader">
+                    <h3 class="theHeaderText">click on the checkbox beside the counterparty to show or hide</h3>
+                </div>
+                <form class="theForm">
+                    <div class="secondFormInputs">
+                        <button class="buyButton" type="submit">
+                            Buy
+                        </button>
+                        <div class="input">
+                            <label for="text">Counterparty:</label><br>
+                            <input type="text" id="name" placeholder="counterparty" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Counterparty S/Bank:</label><br>
+                            <input type="text" id="name" placeholder="counterparty S/Bank" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Counterparty Note:</label><br>
+                            <input type="text" id="name" placeholder="counterparty note" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Buyer's Custodian:</label><br>
+                            <input type="text" id="name" placeholder="Buyer's Custodian" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Volume:</label><br>
+                            <input type="text" id="name" placeholder="Volume" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Rate:</label><br>
+                            <input type="text" id="name" placeholder="Rate" required />
+                        </div>
+                        <div class="input">
+                            <label for="text">Consideration:</label><br>
+                            <input type="text" id="name" placeholder="consideration" required />
+                        </div>
+                        <button class="saveButton" type="submit">
+                            save to view
+                        </button>
+
+                    </div>
+                </form>
+                <div class="rec"></div>
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Deal Date</th>
+                        <th>Settlement Date</th>
+                        <th>Trade Type</th>
+                        <th>Counterparty</th>
+                        <th>Custodian</th>
+                        <th>Security Code</th>
+                        <th>Price</th>
+                        <th>Yield</th>
+                        <th>Volume</th>
+                        <th>Cash Consideration</th>
+                        <th>Statutory Charge</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>25 April, 2021</td>
+                        <td>25 April, 2021</td>
+                        <td>Standard chartered bank</td>
+                        <td>Bank</td>
+                        <td>--</td>
+                        <td>10,000</td>
+                        <td>10,000</td>
+                        <td>200</td>
+                        <td>50,000</td>
+                        <td>50,000</td>
+                        <td>20</td>
+                        <td class="tableActions">
+                            <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>25 April, 2021</td>
+                        <td>25 April, 2021</td>
+                        <td>Standard chartered bank</td>
+                        <td>Bank</td>
+                        <td>--</td>
+                        <td>10,000</td>
+                        <td>10,000</td>
+                        <td>200</td>
+                        <td>50,000</td>
+                        <td>50,000</td>
+                        <td>20</td>
+                        <td class="tableActions">
+                            <img class="icons" src="/-Dealer-Front/Resources/edit-2.svg" alt="">
+                        </td>
+
+                    </tr>
+                </table>
+                <div class="theHeader">
+                    <h3 class="theHeaderText">Enter note to Settlement banks</h3>
+                </div>
+                <form class="theLastForm">
+                    <div class="input">
+                        <label for="text">Additional Notes:</label><br>
+                        <input type="text" id="name" placeholder="enter custiodian" required />
+                    </div>
+                    <div class="input">
+                        <label for="text">Optional Emaill Addresses:</label><br>
+                        <input type="text" id="name" placeholder="Trade Date" required />
+                    </div>
+                </form>
+
+                <div class="buttonsRows">
+                    <div class="buttons">
+                        <button class="filterButton" id="openModal">
+                            clear</button>
+                        <button class="primaryButton" id="openModal">
+                            Submit</button>
+                    </div>
+                    <button class="primaryButton" id="openModal">
+                        Total Cash Flow</button>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+
+
+    <!-- This is the new modal with the grid style -->
+
+
+</body>
+
+</html>
